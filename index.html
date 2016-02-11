@@ -11,6 +11,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,53 +22,54 @@
 
   <style>
 
-    .nav.navbar-nav.navbar-right li a{
-      color:white;
+    .nav.navbar-nav li a{
+      color: white;
     }
 
     .navbar-inverse .navbar-header .navbar-brand {
       color: white;
     }
 
+    #helloFont{
+      font-family: 'Pacifico', cursive;
+    }
+
   </style>
 
   </head>
   <body>
-    <nav class="navbar navbar-static navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="http://www.arkansassteel.com" class="navbar-brand">ASA</a>
-          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </div>
-
-        <div class="collapse navbar-collapse navHeaderCollapse">
-
-          <ul class="nav navbar-nav navbar-right">
-
-            <li><a href="http://www.arkansassteel.com">Home</a></li>
-            <li><a href="http://www.arkansassteel.com/products.html">Products</a></li>
-            <li><a href="http://www.arkansassteel.com/profile.html">About</a></li>
-            <li><a href="http://www.arkansassteel.com/facility.html">Facility</a></li>
-            <li><a href="http://www.arkansassteel.com/contact.html">Contact Us</a></li>
-            <li class="active"><a href="careers.html">Careers</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Hello!</h1>
-        <p class="lead">Welcome to Careers at Arkansas Steel Associates. You are now viewing the positions we're hiring 
-          at ASA.</p>
-      </div>
+      <nav class="navbar navbar-static navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="http://www.arkansassteel.com" class="navbar-brand">ASA</a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </div>
+
+          <div class="collapse navbar-collapse navHeaderCollapse navbar-right">
+
+            <ul class="nav navbar-nav">
+
+              <li><a href="http://www.arkansassteel.com">Home</a></li>
+              <li><a href="http://www.arkansassteel.com/products.html">Products</a></li>
+              <li><a href="http://www.arkansassteel.com/profile.html">About</a></li>
+              <li><a href="http://www.arkansassteel.com/facility.html">Facility</a></li>
+              <li class="active"><a href="careers.html">Careers</a></li>
+              <li><a href="http://www.arkansassteel.com/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
 
     <div class="container">
-      <div class="carousel">
-
+      <div class="jumbotron">
+        <h1 id="helloFont">Hello!</h1>
+        <p class="lead">Welcome to Careers at Arkansas Steel Associates. You are now viewing the positions we're hiring 
+          at ASA.</p>
       </div>
     </div>
 
