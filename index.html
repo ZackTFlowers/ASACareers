@@ -34,6 +34,10 @@
       font-family: 'Pacifico', cursive;
     }
 
+    .btn.sharp {
+      border-radius:0;
+    }
+
   </style>
 
   </head>
@@ -77,10 +81,10 @@
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
-          <th class="col-sm-2 col-md-2">Title</td>
-          <th class="col-sm-6 col-md-7">Description</td>
-          <th class="col-sm-2 col-md-2">Department</td>
-          <th class="col-sm-2 col-md-1">Date Posted</td>
+          <th class="col-sm-2 col-md-2">Title</th>
+          <th class="col-sm-6 col-md-7">Description</th>
+          <th class="col-sm-2 col-md-2">Department</th>
+          <th class="col-sm-2 col-md-1">Date Posted</th>
         </tr>
       </thead>
       <tr>
@@ -131,10 +135,38 @@
         <td>Engineering</td>
         <td>Jan 01 2016</td>
       </tr>
+    </table>
+  </div>
+
+  <div class="container">
+      <p class="text-right">See an opening that interests you?               <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Contact Us!</button></p>
   </div>
 
 
 
+
+  <div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title"><strong>Employment Inquiries</strong></h4>
+      </div>
+      <div class="modal-body">
+        <h4><strong>Hourly positions</strong></h4>
+        <p>For those interested in hourly openings, contact the Arkansas Department of Workforce Services.</p>
+        <blockquote><p><b>Phone:</b> (870) 523-3693</p><p><b>Hours:</b> 8:00AM-5:00PM Mon - Fri</blockquote>
+        <h4><strong>Salaried positions and positions requesting a resume</strong></h4>
+        <p>For individuals interested in salaried positions or positions requesting a resume, email us using the button below.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info">Email Resume</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
